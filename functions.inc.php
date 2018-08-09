@@ -8,10 +8,10 @@
  *
  * @return string The return HTML to send back
  */
-function helloworld_hook_blacklist() {
+function smsussd_hook_blacklist() {
 	$html = '';
 	$html = '<tr><td colspan="2"><h5>';
-	$html .= _("Hello World Hook");
+	$html .= _("SMS USSD Hook");
 	$html .= '<hr></h5></td></tr>';
 	$html .= '<tr><td><a href="#" class="info">';
 	$html .= _("This is the Text for the item").'<span>'._("Popup Help Descriptions").'.</span></a>';
@@ -31,23 +31,23 @@ function helloworld_hook_blacklist() {
  * @param $request array php's $_REQUEST array
  * @return bool true successful or false if not
  */
-function helloworld_hookProcess_blacklist($viewing_itemid, $request) {
+function smsussd_hookProcess_blacklist($viewing_itemid, $request) {
 }
 
-function helloworld_configpageinit($pagename) {
-	helloworld_applyhooks();
+function smsussd_configpageinit($pagename) {
+	smsussd_applyhooks();
 }
 
-function helloworld_applyhooks() {
+function smsussd_applyhooks() {
     global $currentcomponent;
 
     // Add the 'process' function - this gets called when the page is loaded, to hook into
     // displaying stuff on the page.
-    $currentcomponent->addguifunc('helloworld_configpageload');
+    $currentcomponent->addguifunc('smsussd_configpageload');
 }
 
 
-function helloworld_configpageload() {
+function smsussd_configpageload() {
 	global $currentcomponent, $endpoint, $db;
 	$section = _('Hooker');
 	$currentcomponent->addguielem($section, new gui_drawselects('hooker_box', 50, '', 'GUI Item Name', 'Gui Item Help Text'), 9);

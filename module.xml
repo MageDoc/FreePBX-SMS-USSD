@@ -1,6 +1,6 @@
 <module>
-	<rawname>helloworld</rawname>
-	<name>Hello World</name>
+	<rawname>smsussd</rawname>
+	<name>MageDoc SMS &amp; USSD</name>
 	<version>0.1.0.0</version>
 	<candisable>yes</candisable>
 	<canuninstall>yes</canuninstall>
@@ -8,19 +8,19 @@
 		*0.1.0.0* Original Release (beta)
 	</changelog>
 	<description>
-		provides a hello world example
+		Allows to send and receive SMS and USSD commands
 	</description>
 	<attention>
-		This text will be displayed prominently before the user is able to install the module. Use to display warning before installation.
+		Are you ready do install MageDoc SMS &amp; USSD module?
 	</attention>
-	<info>http://github.com/jfinstrom/</info>
-	<menuitems>
-                <HelloWorld>Hello World</HelloWorld>
-	</menuitems>
+	<info>https://github.com/MageDoc/FreePBX-SMS-USSD</info>
 	<depends>
 		<module>core</module>
 		<version>ge2.2</version>
     </depends>
-	<category>Settings</category>
+	<category>Applications</category>
+    <menuitems>
+        <callback>SMS &amp; USSD</callback>
+    </menuitems>
 </module>
 

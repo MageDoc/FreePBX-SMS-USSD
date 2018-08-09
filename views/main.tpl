@@ -1,4 +1,4 @@
-<h2>Hello World Module</h2>
+<h2>SMS &amp; USSD</h2>
 
 <h5>Is Asterisk Manager Connected? <?php echo ($astmanconnected) ? 'Yes' : 'No';?></h5>
 
