@@ -18,9 +18,9 @@
 		<module>core</module>
 		<version>ge2.2</version>
     </depends>
-	<category>Applications</category>
+    <category>Applications</category>
     <menuitems>
-        <callback>SMS &amp; USSD</callback>
+        <smsussd>SMS &amp; USSD</smsussd>
     </menuitems>
 </module>
 
